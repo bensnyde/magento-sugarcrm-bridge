@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <config>
+    <modules>
+      <Bs_SugarBridge>
+        <version>0.1.0</version>
+      </Bs_SugarBridge>
+    </modules>
+    <global>
+
+      <events>
+         <sales_order_place_after>
+          <observers>
+            <bs_sugarbridge>
+              <class>sugarbridge/observer</class>
+              <method>export</method>
+            </bs_sugarbridge>
+          </observers>
+        </sales_order_place_after>
+      </events>
+
+      <models>
+        <sugarbridge>
+          <class>Bs_SugarBridge_Model</class>
+        </sugarbridge>
+      </models>
+
+      <helpers>
+        <sugarbridge>
+          <class>Bs_SugarBridge_Helper</class>
+        </sugarbridge>
+      </helpers>
+
+    </global>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <bs>
+                                            <title>BS Module</title>
+                                        </bs>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+  </config>
