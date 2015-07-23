@@ -6,6 +6,7 @@ Magento to SugarCRM Bridge
 Export Magento customer information to SugarCRM
   
   <http://magento.com/>
+  
   <http://www.sugarcrm.com/>
 
  * @author     Benton Snyder
