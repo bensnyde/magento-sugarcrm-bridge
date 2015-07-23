@@ -21,7 +21,7 @@ Whenever an order is placed successfully, the following information is exported 
 2. A contact is created under the above account with the customer's information
 3. A campaign is created under the above account with the order details
 
-You have the option of specifying a campaign to help track sales. The campaign is selected in the options detailed below. 
+You have the option of specifying a campaign to help track sales.
  
 # Usage
 
