@@ -15,7 +15,7 @@ Export Magento customer information to SugarCRM
 
 # Workflow
 
-Whenever an order is placed successfully, the following information is exported via an API call to SugarCRM
+Whenever an order is placed successfully, the following information is exported to SugarCRM.
 
 1. An account is created from the specified Company or the customer's First and Last name if no company is specified
 2. A contact is created under the above account with the customer's information
@@ -26,5 +26,6 @@ You have the option of specifying a campaign to help track sales. The campaign i
 # Usage
 
 1. Install plugin into Magento root directory
-2. From the Magento admin portal, go to System->Configuration->Bs SugarBridge->SugarCRM and enter SugarCRM information
+2. Enter SugarCRM information at
+    *System->Configuration->Bs SugarBridge->SugarCRM*
 
